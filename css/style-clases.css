@@ -1,0 +1,61 @@
+
+#clases {
+    width: 96%;
+    margin: 2%;
+}
+
+#clases a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#clases p {
+  font-size: 1.1em;
+  margin: 1em 0;
+}
+
+#clases .description {
+  margin: 1em auto 2.25em;
+}
+
+#clases h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+#clases ul {
+  list-style: none;
+  padding: 0;
+}
+
+#clases ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+#clases ul .inner.show {
+  /*display: block;*/
+}
+
+#clases ul li {
+  margin: .5em;
+}
+
+#clases ul li a.toggle {
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: .75em;
+  border-radius: 0.15em;
+  transition: background .3s ease;
+}
+
+#clases ul li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.sublist {
+    display: inline-block;
+}

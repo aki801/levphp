@@ -1,0 +1,124 @@
+body {
+  background: #d6eaf2;
+  color: #333;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+
+/* Button styles */
+.show-card {
+  background: #fff;
+  border-radius: 4em;
+  border: 0.25em solid #1fa756;
+  color: #1fa756;
+  font-size: 18px;
+  left: 50%;
+  line-height: 1.5;
+  padding: 1em 1em 1em 4em;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/* Image on the button */
+.show-card img {
+  border-radius: 50%;
+  left: 0.3em;
+  position: absolute;
+  top: 0.25em;
+  width: 3em;
+}
+
+.card {
+  bottom: calc(50% - 8em);
+  display: none;
+  height: 16em;
+  left: calc(50% - 10em);
+  position: absolute;
+  -webkit-transition: all 0.4s 0.4s cubic-bezier(.5,.2,.43,1.33);
+  transition: all 0.4s 0.4s cubic-bezier(.5,.2,.43,1.33);
+  width: 20em;
+}
+
+.close {
+  color: #aaa;
+  cursor: pointer;
+  height: 1em;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  width: 1em;
+  z-index: 10;
+}
+
+.details {
+  position: absolute;
+  bottom: 2.5em;
+  background: #fff;
+  border-radius: 0.25em;
+  height: 13.5em;
+  overflow: hidden;
+  text-align: center;
+  width: 20em;
+}
+
+.name {
+  color: #333;
+  font-weight: bold;
+  margin: 3em 0 0;
+}
+
+.description {
+  color: #666;
+  font-size: 1em;
+  font-weight: 200;
+  line-height: 1.5;
+  margin: 0.75em 2em 2em;
+}
+
+.headshot img {
+  border-radius: 50%;
+  border: 0.5em solid #fff;
+  display: block;
+  height: 6em;
+  margin: -3em auto 0.5em;
+  width: 6em;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.icon-bar {
+  background: #1fa756;
+  border-radius: 0.25em;
+  height: 4em;
+  left: -1em;
+  position: absolute;
+  right: -1em;
+  top: 13em;
+}
+
+.icon-bar ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-display: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  padding: 0;
+}
+
+.icon-bar li {
+  display: inline-block;
+  font-size: 2em;
+  padding: 0 1em;
+  width: 33%;
+}
+
+.icon-bar a {
+  color: #fff;
+  text-decoration: none;
+}

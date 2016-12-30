@@ -1,0 +1,62 @@
+#redes {
+    text-align: center;
+}
+
+/** Mapa**/
+section#mapa {
+    display: inline-block;
+    width: 52%;
+    margin: 1% 1.5%;
+}
+
+section#mapa iframe { /*se asigna un ancho al mapa*/
+    width:100%;
+}
+/**Fin Mapa**/
+
+
+/**Formato de article Datos de contacto**/
+
+article#datos {
+    display: inline-block;
+    width: 39%;
+    margin: 1% 1.5%;
+    text-align: left;
+}
+
+article#datos nav {
+    top: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#datos nav h1 {
+  margin: 0px;
+}
+
+article#datos nav a {
+    text-decoration: none;
+}
+
+article#datos  label { /*se da un formato a las etiquetas*/
+    display: inline-block;
+    width: 80%; /*para el texto*/</strong>
+    text-align: left;
+}
+
+article#datos input {
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 5px;
+}
+
+article#datos textarea {
+    width: 100%;
+}
+
+article#datos input#submit { /*da formato al boton enviar*/
+    width: 100px;
+
+}
+
+/**Formato de article Datos de contacto**/

@@ -1,0 +1,152 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css');
+@main-color: #2B2D42;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+html, body {
+  height: 100vh;
+}
+
+// Get entry-wrappers images
+#entry-1 {
+  background: url('http://img07.deviantart.net/39d3/i/2009/176/f/e/galaxy___horse_head_nebula_by_sirusdark.jpg');
+}
+#entry-2 {
+  background: url('http://i4.mirror.co.uk/incoming/article5803160.ece/ALTERNATES/s615/Lion-park.jpg');
+}
+#entry-3 {
+  background: url('http://lesobservateurs.ch/wp-content/uploads/2015/12/matrix2.jpg');
+  background-size: cover;
+}
+#entry-4 {
+  background: url('http://www.impressionidiviaggio.com/wp-content/uploads/2015/08/croazia_11.jpg');
+  background-size: cover;
+}
+
+.entry-wrapper {
+  height: 300px;
+  position: relative;
+  .entry-preview {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: right;
+    background-color: #fff;
+    background: rgba(255,255,255,0.6);
+    padding: 0 20px 0 0;
+    .subtitle {
+      color: #383e51;
+      margin: 20px 0;
+      line-height: 1.2em;
+      font-weight: bold;
+      font-size: 1.4em;
+      font-family: "Oxygen",sans-serif;
+    }
+    .dots {
+      font-size: 35px;
+      font-weight: bold;
+      background: @main-color;
+      color: #fff;
+      padding: 0 6px;
+      height: 20px;
+      line-height: 0;
+      cursor: pointer;
+      float: right;
+      margin-bottom: 20px;
+      margin-top: -10px;
+    }
+    @media (min-width: 768px) {
+      width: 90%;
+      right: 0;
+      top: auto;
+      bottom: 20px;
+    }
+    @media (min-width: 1280px){ width: 80%; }
+    @media (min-width: 1440px){ width: 70%; }
+    @media (min-width: 1680px){ width: 60%; }
+  }
+  .entry-content {
+    padding: 90px 0 0 50px;
+    background: @main-color;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    text-align: left;
+    .meta {
+      padding: 0 0 40px 0;
+      font-size: 0.8em;
+      ul {
+        line-height: 1.4em;
+        list-style-position: outside;
+        li {
+          list-style: none;
+          margin-bottom: 12px;
+          display: inline;
+          margin-right: 10px;
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+    }
+    .button {
+      margin-top: 20px;
+      text-decoration: none;
+      padding: 14px 18px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      border-bottom: 5px solid #44AFAF;
+      text-transform: uppercase;
+      line-height: 1;
+      background: #fff;
+      color: #203646;
+      &:hover {
+        border-bottom: 5px solid red;
+      }
+    }
+    @media (min-width: 768px) {
+      width: 90%;
+      float: right;
+      -webkit-transform: translateX(100%);
+      -moz-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      -o-transform: translateX(100%);
+      transform: translateX(100%);
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+    }
+    @media (min-width: 1280px){ width: 80%; }
+    @media (min-width: 1440px){ width: 70%; }
+    @media (min-width: 1680px){ width: 60%; }
+  }
+  &:hover {
+    .entry-content {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform:translateX(0);
+      -moz-transform:translateX(0);
+      -ms-transform:translateX(0);
+      -o-transform:translateX(0);
+      transform:translateX(0);
+    }
+  }
+  @media (min-width: 768px){
+    padding: 0;
+    width: 50%;
+    float: left;
+    min-height: 300px;
+    height: 300px;
+  }
+}
